@@ -5,6 +5,12 @@ if wiek.isdigit() == False:
 wiek=int(wiek)
 if wiek>=18 and wiek<40:
 	print("Witaj w naszej apce z alkoholem, zapraszamy do zakupów")
+	# proponowanie alkoholu
+	wybor = input("czy jestes zainteresowany/a nasz propozycj alkoholu? T/N")
+	if wybor.upper() == 'T':
+		print("Oto nasza propozycja : Aperol Spritz, Harnas")
+	else:
+		print("Dziekujemy za odwiedzenie naszej aplikacji")
 elif wiek>=40:
 	print("Witaj w naszej apce z alkoholem, zapraszamy do zakupów")
 	print("Uważaj w Twoim wieku nie przasadzaj ze spożyciem")
